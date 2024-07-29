@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GerTest</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #background {
+            z-index: -1;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(45deg, rgb(228, 228, 228), rgb(241, 241, 241), rgb(255, 255, 255), rgb(241, 241, 241), rgb(228, 228, 228));
+        }
+
+        #getValue {
+            margin-left: 100px;
+            width: 250px;
+            height: 50px;
+            border-radius: 10px;
+            border-width: 1px;
+            background-color: rgba(202, 202, 202, 0.567);
+            font-size: 17px;
+        }
+
+        #getValue:hover {
+            background-color: rgba(194, 194, 194, 0.77);
+            transition: 0.25s;
+        }
+
+        .gif {
+            margin-left: 100px;
+            border: black 2px solid;
+        }
+
+        .questionLabel {
+            display: flex;
+            margin-right: 100px;
+            margin-left: 100px;
+            background-color: rgba(202, 202, 202, 0.567);
+            font-size: 25px;
+            height: 40px;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .questionLabel:hover {
+            background-color: rgba(194, 194, 194, 0.77);
+            transition: 0.25s;
+        }
+
+        .questionRadio {
+            margin-left: 5px;
+            width: 17px;
+            height: 17px;
+            accent-color: black;
+        }
+
+        .leftMargin {
+            margin-left: 100px;
+        }
+
+        .centerText {
+            text-align: center;
+        }
+        #bottomDiv{
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            color: white;
+            font-size: 35px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <h1 class="centerText">How Big Is Your Coc?</h1>
+    <br /><br />
+    <h2 class="leftMargin">Your Gender?</h2>    
+    <video class="gif" autoplay muted loop
+        src="https://media.tenor.com/5A7lmfz8H1kAAAPo/boy-or-girl-gender-reveal.mp4"></video>
+    <label class="questionLabel">
+        <input type="radio" name="q1" class="questionRadio" id="male" value="Male" />
+        Male
+    </label>
+    <br />
+    <label class="questionLabel">
+        <input type="radio" name="q1" class="questionRadio" id="female" value="Female" />
+        Female
+    </label>
+    <br />
+    <h2 class="leftMargin">What Is Your Name?</h2>
+    <video class="gif" autoplay muted loop
+        src="https://media.tenor.com/FBIkAQiT0d0AAAPo/waltwhite-breakingbad.mp4"></video>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q2" id="mustafa" value="Mustafa Kivanc Solak" />
+        Mustafa Kivanc Solak
+    </label>
+    <br />
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q2" id="notMustafa" value="Not Mustafa Kivanc Solak" />
+        Not Mustafa Kivanc Solak
+    </label>
+    <br />
+    <h2 class="leftMargin">Your Shoe Size</h2>
+    <video class="gif" autoplay muted loop src="https://media.tenor.com/CewndJQtztMAAAPo/foot-rub.mp4"></video>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q3" id="smaller38" value="smaller38" />
+        Smaller Than 38
+    </label>
+    <br />
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q3" id="between3842" value="Between3842" />
+        Between 38 And 42
+    </label>
+    <br />
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q3" id="bigger42" value="bigger42" />
+        Bigger Than 42
+    </label>
+    <br>
+    <h2 class="leftMargin">What Is Your Coc Th Level?</h2>
+    <video style="width: 500px;" class="gif" autoplay muted loop
+        src="https://media.tenor.com/RHOOzmDcUCEAAAPo/clash-of-clans-coc.mp4"></video>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q4" id="iDontHave" value="iDontHave">
+        I Don't Have A Clash Of Clans Account
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q4" id="less8" value="less8">
+        Less Than 8
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q4" id="between811" value="between811">
+        Between 8 And 11
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q4" id="more11" value="more11">
+        More Than 11
+    </label>
+    <br>
+    <h2 class="leftMargin">Your Height Cm?</h2>
+    <video class="gif" autoplay muted loop src="https://media.tenor.com/BylJzejmGKEAAAPo/enanos.mp4"></video>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q5" id="less170" value="less170">
+        Less Than 170
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q5" id="between170179" value="between170179">
+        Between 170 And 179
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q5" id="between180189" value="between180189">
+        Between 180 And 189
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q5" id="more190" value="more190">
+        190 And More Than 190
+    </label>
+    <br />
+    <h2 class="leftMargin">Your Weight Kilogram?</h2>
+    <video style="width: 400px;" class="gif" autoplay muted loop src="https://media.tenor.com/sWCHrSMOS_sAAAPo/weight-loss-weight-gain.mp4"></video>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q6" id="less60" value="less60">
+        Less Than 60
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q6" id="between6069" value="between6069">
+        Between 60 And 69
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q6" id="between7079" value="between7079">
+        Between 70 And 79
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q6" id="between8089" value="between8089">
+        Between 80 and 89
+    </label>
+    <br>
+    <label class="questionLabel">
+        <input type="radio" class="questionRadio" name="q6" id="more90" value="more90">
+        90 And More Than 90
+    </label>
+    <br />
+    <input type="button" id="getValue" value="Check Your Test Result!" />
+    <br><br><br><br><br><br><br><br>
+    <div id="bottomDiv">Instagram : @gercegegercege Discord : gercege</div>
+    <script>
+        var sizeOfCoc = 0;
+        document
+            .getElementById("getValue")
+            .addEventListener("click", function () {
+                const mustafaRadio = document.getElementById("mustafa");
+                const notMustafaRadio = document.getElementById("notMustafa");
+
+                const maleRadio = document.getElementById("male");
+                const femaleRadio = document.getElementById("female");
+
+                const smallerFeetRadio = document.getElementById("smaller38");
+                const betweenFeetRadio = document.getElementById("between3842");
+                const biggerFeetRadio = document.getElementById("bigger42");
+
+                const iDontHaveRadio = document.getElementById("iDontHave")
+                const lessThRadio = document.getElementById("less8");
+                const betweenThRadio = document.getElementById("between811");
+                const moreThRadio = document.getElementById("more11");
+
+                const less170Radio = document.getElementById("less170")
+                const between170179Radio = document.getElementById("between170179");
+                const between180189Radio = document.getElementById("between180189");
+                const more190Radio = document.getElementById("more190");
+
+                const less60Radio = document.getElementById("less60")
+                const between6069Radio = document.getElementById("between6069");
+                const between7079Radio = document.getElementById("between7079");
+                const between8089Radio = document.getElementById("between8089");
+                const more90Radio = document.getElementById("more90");
+
+                var allChecked = true;
+                var groupNames = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
+
+                for (var i = 0; i < groupNames.length; i++) {
+                    var radios = document.getElementsByName(groupNames[i]);
+                    var groupChecked = false;
+
+                    for (var j = 0; j < radios.length; j++) {
+                        if (radios[j].checked) {
+                            groupChecked = true;
+                            break;
+                        }
+                    }
+                    if (!groupChecked) {
+                        allChecked = false;
+                        break;
+                    }
+                }
+
+                if (allChecked) {
+                    if (femaleRadio.checked) {
+                        alert("You Don't Even Have A Coc Why Did You Solve This Test?");
+                    } else if (maleRadio.checked && mustafaRadio.checked) {
+                        alert("You Have Smallest Coc I Have Ever Seen : 3Cm");
+                    } else if (maleRadio.checked && notMustafaRadio.checked) {
+                        if (smallerFeetRadio.checked) {
+                            sizeOfCoc += 2;
+                        }
+                        if (betweenFeetRadio.checked) {
+                            sizeOfCoc += 4;
+                        }
+                        if (biggerFeetRadio.checked) {
+                            sizeOfCoc += 6;
+                        }
+                        if (iDontHaveRadio.checked) {
+                            sizeOfCoc--;
+                        }
+                        if (lessThRadio.checked) {
+                            sizeOfCoc += 2;
+                        }
+                        if (betweenThRadio.checked) {
+                            sizeOfCoc += 4;
+                        }
+                        if (moreThRadio.checked) {
+                            sizeOfCoc += 6;
+                        }
+                        if (less170Radio.checked){
+                            sizeOfCoc += 6;
+                        }
+                        if (between170179Radio.checked){
+                            sizeOfCoc += 4;
+                        }
+                        if (between180189Radio.checked){
+                            sizeOfCoc += 2;
+                        }
+                        if (more190Radio.checked){
+                            sizeOfCoc--;
+                        }
+                        if (less60Radio.checked){
+                            sizeOfCoc += 2;
+                        }
+                        if (between6069Radio.checked){
+                            sizeOfCoc += 2;
+                        }
+                        if (between7079Radio.checked){
+                            sizeOfCoc += 3;
+                        }
+                        if (between8089Radio.checked){
+                            sizeOfCoc += 3;
+                        }
+                        if (more90Radio.checked){
+                            sizeOfCoc += 4;
+                        }
+                        if (sizeOfCoc <= 11){
+                            alert("Your Coc Is Smaller Than Avarage : " + sizeOfCoc)
+                        }
+                        if (sizeOfCoc >= 12 && sizeOfCoc <= 15){
+                            alert("Your Coc Is Avarage : " + sizeOfCoc + "Cm")
+                        }
+                        if (sizeOfCoc > 15){
+                            alert("Your Coc Is Bigger Than Avarage : " + sizeOfCoc + "Cm")
+                        }
+                    }
+                    location.reload();
+                }
+            });
+    </script>
+</body>
+
+</html>
